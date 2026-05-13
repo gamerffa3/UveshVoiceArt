@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Uvesh | Cinematic Voice Artist | AI Motion Studio 2026</title>
-  <meta name="description" content="Uvesh – Professional Hindi Voice Actor. Anime dubbing, emotional narration, comedy expert. 100+ projects. Book now!">
-  <meta name="keywords" content="Uvesh, Voice Actor, Hindi Dubbing, Anime Dubbing Artist, Emotional Voice">
-  <meta name="author" content="Uvesh Studio">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Uvesh | Cinematic Voice Artist | Premium Hindi Dubbing</title>
+  <meta name="description" content="Uvesh – Professional Hindi Voice Actor & Dubbing Artist. 100+ projects, anime dubbing, emotional voice, comedy expert. Book for cinematic quality.">
+  <meta name="keywords" content="Uvesh, Hindi Voice Actor, Dubbing Artist, Anime Dubbing, Emotional Voice, Voice Over">
+  <meta name="author" content="Uvesh Voice Studio">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
   <style>
@@ -19,19 +20,45 @@
     }
 
     body {
-      background-color: #03000a;
+      background: #0a020f;
       font-family: 'Inter', sans-serif;
-      color: #f0eff5;
+      color: #f0ebfa;
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
 
-    /* custom cursor light */
-    .cursor-glow {
+    /* rich dynamic background */
+    .bg-ambient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at 40% 50%, #1f0a2e, #030006 85%);
+      z-index: -2;
+    }
+
+    /* animated glow orbs */
+    .orb {
+      position: fixed;
+      width: 60vmax;
+      height: 60vmax;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 60, 150, 0.15), transparent 70%);
+      filter: blur(70px);
+      z-index: -1;
+      animation: orbMove 18s infinite alternate;
+    }
+    @keyframes orbMove {
+      0% { transform: translate(-10%, -10%) scale(1); opacity: 0.4; }
+      100% { transform: translate(15%, 15%) scale(1.3); opacity: 0.7; }
+    }
+
+    .cursor-premium {
       position: fixed;
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(255, 40, 100, 0.2) 0%, rgba(128, 0, 255, 0) 70%);
+      background: radial-gradient(circle, rgba(255, 70, 150, 0.2) 0%, rgba(180, 0, 255, 0) 70%);
       border-radius: 50%;
       pointer-events: none;
       transform: translate(-50%, -50%);
@@ -40,381 +67,383 @@
     }
 
     ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: #0c0a18; }
-    ::-webkit-scrollbar-thumb { background: #ff2e6b; border-radius: 10px; }
+    ::-webkit-scrollbar-track { background: #15081f; }
+    ::-webkit-scrollbar-thumb { background: #ff3b82; border-radius: 20px; }
 
-    /* cinematic loader */
-    .loader {
-      position: fixed;
-      inset: 0;
-      background: #010005;
-      z-index: 10000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      transition: opacity 1.2s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .mic-pulse {
-      font-size: 70px;
-      color: #ff2d6e;
-      filter: drop-shadow(0 0 20px #ff2d6e);
-      animation: pulseMicGlow 1s infinite alternate;
-    }
-    @keyframes pulseMicGlow {
-      0% { transform: scale(0.96); text-shadow: 0 0 0 #ff2d6e; }
-      100% { transform: scale(1.2); text-shadow: 0 0 35px #ff2d6e; }
-    }
-
-    /* glassmorphism ultimate */
     .glass-card {
-      background: rgba(10, 8, 22, 0.65);
-      backdrop-filter: blur(14px);
-      border-radius: 36px;
-      border: 1px solid rgba(255, 60, 110, 0.4);
-      transition: all 0.4s;
-      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5);
+      background: rgba(12, 6, 20, 0.7);
+      backdrop-filter: blur(16px);
+      border-radius: 42px;
+      border: 1px solid rgba(255, 90, 150, 0.45);
+      transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      box-shadow: 0 25px 38px -12px rgba(0,0,0,0.7);
     }
     .glass-card:hover {
-      border-color: #ff3b78;
+      border-color: #ff619a;
       transform: translateY(-6px);
-      box-shadow: 0 30px 40px -12px rgba(255, 40, 100, 0.3);
+      box-shadow: 0 30px 45px -8px rgba(255, 60, 130, 0.4);
     }
 
     .section-title {
-      font-size: 3rem;
-      background: linear-gradient(125deg, #ffffff, #ff5c88, #c84eff);
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, #fff, #ff8eb5, #dd8aff);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      margin-bottom: 2rem;
       text-align: center;
+      margin-bottom: 2rem;
       font-family: 'Syne', sans-serif;
     }
 
     .btn-primary, .btn-outline {
-      padding: 12px 32px;
+      padding: 12px 36px;
       border-radius: 60px;
       font-weight: 700;
       text-decoration: none;
       display: inline-block;
-      margin: 6px;
+      margin: 8px;
       transition: 0.25s;
     }
     .btn-primary {
-      background: linear-gradient(95deg, #ff1e50, #c20048);
+      background: linear-gradient(105deg, #ff1f62, #b8004a);
       color: white;
-      box-shadow: 0 8px 18px rgba(255, 30, 80, 0.4);
+      box-shadow: 0 10px 22px rgba(255, 30, 100, 0.5);
     }
     .btn-outline {
       background: rgba(0,0,0,0.5);
-      border: 1.5px solid #ff4d7a;
-      color: #ff90b0;
+      border: 1.5px solid #ff6a9e;
+      color: #ffbdd6;
     }
     .btn-primary:hover, .btn-outline:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 18px #ff3b78;
+      box-shadow: 0 0 20px #ff3e82;
     }
 
-    /* particles canvas */
-    #particleCanvas {
+    /* particles */
+    #particlesCanvas {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 0;
+      z-index: -1;
     }
 
-    /* moving photo animations */
-    .hero-image-wrapper {
-      animation: cinematicFloat 5s infinite alternate ease-in-out;
-      filter: drop-shadow(0 20px 30px rgba(255, 30, 90, 0.3));
-    }
-    @keyframes cinematicFloat {
-      0% { transform: translateY(0px) rotate(0deg); }
-      100% { transform: translateY(-15px) rotate(1deg); }
-    }
-
-    .studio-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 28px;
-    }
-    .gallery-img-card {
-      border-radius: 28px;
-      overflow: hidden;
-      transition: 0.35s;
-      border: 1px solid rgba(255,80,120,0.4);
-    }
-    .gallery-img-card img {
+    /* 9:16 image ratio container */
+    .ratio-9-16 {
+      aspect-ratio: 9 / 16;
       width: 100%;
-      height: 220px;
+      max-width: 280px;
+      margin: 0 auto;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.5), 0 0 0 2px rgba(255, 90, 150, 0.4);
+      transition: transform 0.35s ease;
+    }
+    .ratio-9-16 img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      display: block;
       transition: transform 0.5s;
     }
-    .gallery-img-card:hover img {
-      transform: scale(1.05);
+    .ratio-9-16:hover {
+      transform: scale(1.02);
+      box-shadow: 0 28px 40px rgba(255, 50, 120, 0.4);
     }
-    .price-tag {
-      background: linear-gradient(135deg, #ff1e50, #9b2eff);
-      border-radius: 40px;
-      padding: 4px 12px;
-      font-weight: bold;
-      font-size: 0.8rem;
+    .ratio-9-16:hover img {
+      transform: scale(1.03);
+    }
+
+    .profile-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+    }
+
+    /* animations floating */
+    @keyframes floatImage {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
+    }
+    .float-animation {
+      animation: floatImage 4s infinite alternate ease-in-out;
     }
 
     @media (max-width: 800px) {
       .section-title { font-size: 2rem; }
-      section { padding: 60px 5%; }
+      section { padding: 70px 5%; }
+      .ratio-9-16 { max-width: 200px; }
     }
   </style>
 </head>
 <body>
 
-<div class="cursor-glow" id="cursorGlow"></div>
-<canvas id="particleCanvas"></canvas>
+<div class="bg-ambient"></div>
+<div class="orb" style="top: -20%; left: -10%;"></div>
+<div class="orb" style="bottom: -10%; right: -5%; animation-duration: 22s;"></div>
+<div class="cursor-premium" id="cursorGlow"></div>
+<canvas id="particlesCanvas"></canvas>
 
-<!-- loader -->
-<div class="loader" id="loader">
-  <div class="mic-pulse"><i class="fas fa-microphone-alt"></i></div>
-  <div style="margin-top: 30px; letter-spacing: 2px;">🎙️ Uvesh | Cinematic Voice Studio</div>
-  <div style="margin-top: 15px; font-size: 0.85rem; opacity:0.7;">Every Emotion Embodied in Voice</div>
+<!-- Loader -->
+<div id="loader" style="position: fixed; inset: 0; background: #030008; z-index: 10000; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: opacity 1s;">
+  <i class="fas fa-microphone-alt" style="font-size: 70px; color: #ff3b7e; filter: drop-shadow(0 0 28px #ff3b7e); animation: pulseLoader 0.9s infinite alternate;"></i>
+  <style>@keyframes pulseLoader { 0% { transform: scale(0.96); opacity: 0.8; } 100% { transform: scale(1.2); text-shadow: 0 0 20px #ff498b; } }</style>
+  <p style="margin-top: 32px; letter-spacing: 2px; font-weight: 300;">Uvesh | Every Emotion Has A Voice</p>
 </div>
 
-<main id="mainContent" style="opacity:0; transition: opacity 1.2s ease;">
+<main id="mainContent" style="opacity: 0; transition: opacity 1.2s ease;">
 
-<!-- HERO SECTION with BACKGROUND REMOVED IMAGE (MyPhoto4.png) animated cinematic -->
-<section class="hero" style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
-  <div style="position: absolute; inset:0; background: radial-gradient(circle at 80% 20%, #ff206050, #010005 90%); pointer-events: none;"></div>
-  <div class="container" style="max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; padding: 0 5%;">
-    <div style="flex:1; min-width: 260px; z-index: 3;">
-      <div class="price-tag" style="display: inline-block;"><i class="fas fa-check-circle"></i> 100+ Projects • 100+ Clients</div>
-      <h1 style="font-size: clamp(2.8rem, 7vw, 5.5rem); background: linear-gradient(125deg, #fff, #ff638c, #c357ff); background-clip: text; -webkit-background-clip: text; color: transparent; margin: 15px 0 0;">Uvesh</h1>
-      <p style="font-size: 1.2rem; font-weight: 500; margin: 12px 0;"><i class="fas fa-microphone"></i> Hindi Voice Artist | Deep Emotion + Comedy Dubbing Expert</p>
-      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0;">
-        <span class="glass-card" style="padding: 6px 16px;">🎬 Anime Dubbing</span>
-        <span class="glass-card" style="padding: 6px 16px;">🎭 Bollywood Trailer Style</span>
-        <span class="glass-card" style="padding: 6px 16px;">🎮 Gaming Voices</span>
+<!-- Hero Section without MyPhoto4, only text & trust -->
+<section style="min-height: 100vh; display: flex; align-items: center; padding: 100px 5%;">
+  <div class="container" style="max-width: 1300px; margin: 0 auto; text-align: center;">
+    <div class="glass-card" style="padding: 50px 30px; max-width: 900px; margin: 0 auto;">
+      <div style="display: inline-block; background: #ff3b7e20; border-radius: 60px; padding: 6px 20px; margin-bottom: 20px;"><i class="fas fa-star-of-life"></i> 100+ Projects • 100+ Happy Clients</div>
+      <h1 style="font-size: clamp(3rem, 10vw, 5rem); background: linear-gradient(125deg, #fff, #ff77a8, #dc7eff); background-clip: text; -webkit-background-clip: text; color: transparent;">Uvesh</h1>
+      <p style="font-size: 1.4rem; font-weight: 500;"><i class="fas fa-microphone-alt" style="color:#ff4d87;"></i> Hindi Voice Artist | Deep Emotion + Anime Dubbing Expert</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 30px 0;">
+        <span class="glass-card" style="padding: 6px 20px;">🎭 Cinematic Narration</span>
+        <span class="glass-card" style="padding: 6px 20px;">😂 Comedy Timing</span>
+        <span class="glass-card" style="padding: 6px 20px;">🐉 Anime Dubbing Style</span>
+        <span class="glass-card" style="padding: 6px 20px;">🎮 Gaming Voices</span>
       </div>
-      <div><a href="#packages" class="btn-primary"><i class="fas fa-rupee-sign"></i> View Packages</a>
-      <a href="https://wa.me/917736512393" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a></div>
-    </div>
-    <div style="flex:1; display: flex; justify-content: center; z-index: 3;" class="hero-image-wrapper">
-      <div style="width: 320px; height: 320px; background: radial-gradient(circle, #ff1e5a30, transparent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-        <img src="MyPhoto4.png" alt="Uvesh Voice Artist Cinematic" style="width: 100%; max-width: 300px; border-radius: 32px; box-shadow: 0 25px 45px rgba(0,0,0,0.5), 0 0 0 3px rgba(255,60,120,0.3); transition: 0.4s;" onerror="this.src='https://placehold.co/400x400/1a0a2a/ff4d7a?text=Uvesh+Portrait'">
-      </div>
+      <div><a href="#packages" class="btn-primary"><i class="fas fa-headphones"></i> Packages & Rates</a>
+      <a href="https://wa.me/917736512393" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Now</a></div>
     </div>
   </div>
 </section>
 
-<!-- About + Studio Gear + personal photo integration -->
-<section id="about">
-  <div class="container">
-    <h2 class="section-title">The Voice & The Vision</h2>
-    <div class="glass-card" style="padding: 45px; display: flex; flex-wrap: wrap; gap: 35px;">
-      <div style="flex: 1.5;">
-        <p style="font-size: 1.2rem; line-height: 1.5;"><strong>Uvesh</strong> — 3-4 years of professional dubbing magic. With over 100+ projects and 100+ satisfied creators, I bring life to anime characters, cinematic trailers, and emotional storytelling. My voice adapts: from high-energy anime screams to warm, deep narration.</p>
-        <ul style="margin-top: 25px; list-style: none;">
-          <li><i class="fas fa-check-circle" style="color:#ff3366;"></i> Maono PD200X + Professional sound treatment</li>
-          <li><i class="fas fa-check-circle"></i> Adobe Audition + Reaper advanced editing</li>
-          <li><i class="fas fa-check-circle"></i> Same-day/24h turnaround available</li>
-        </ul>
-      </div>
-      <div style="flex:1; background: rgba(255,60,110,0.07); border-radius: 28px; padding: 20px; text-align: center;">
-        <img src="MyPhoto2.png" alt="Uvesh Studio" style="width: 100%; max-width: 180px; border-radius: 28px; margin-bottom: 10px; border: 2px solid #ff4d7a;" onerror="this.src='https://placehold.co/200x200/1e0a2a/ff638c?text=Studio'">
-        <h3><i class="fas fa-microphone-alt"></i> Maono PD200X Rig</h3>
-        <p>Studio quality / Noise-Free</p>
-        <div class="price-tag">Trusted by youtubers & brands</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery / Images from your root: MyPhoto3.png etc studio cinematic -->
+<!-- Personal Photo Gallery (9:16 ratio, MyPhoto2, MyPhoto3, MyPhtoto1 only, no MyPhoto4) -->
 <section>
   <div class="container">
-    <h2 class="section-title">Behind The Mic | Studio Moments</h2>
-    <div class="studio-gallery-grid">
-      <div class="gallery-img-card glass-card"><img src="MyPhoto3.png" alt="voice session"><div style="padding: 12px;">🎙️ Voice Warmup Session</div></div>
-      <div class="gallery-img-card glass-card"><img src="MyPhtoto1.png" alt="dubbing artist"><div style="padding: 12px;">🎧 Anime Dubbing Live</div></div>
-      <div class="gallery-img-card glass-card"><img src="MyPhoto2.png" alt="recording studio"><div style="padding: 12px;">⚡ Professional Control Room</div></div>
-      <div class="gallery-img-card glass-card"><img src="MyPhoto4.png" alt="Uvesh portrait"><div style="padding: 12px;">✨ Cinematic Artist Portrait</div></div>
+    <h2 class="section-title"><i class="fas fa-camera"></i> Moments • The Voice Artist</h2>
+    <div class="profile-grid">
+      <!-- MyPhoto2 -->
+      <div class="ratio-9-16 float-animation glass-card" style="padding: 8px; background: none;">
+        <img src="MyPhoto2.png" alt="Uvesh portrait 1" onerror="this.src='https://placehold.co/400x711/1f0a2a/ff6a94?text=Uvesh+Portrait'">
+        <p style="text-align: center; margin-top: 12px;"><i class="fas fa-microphone"></i> Studio Vibe</p>
+      </div>
+      <!-- MyPhoto3 -->
+      <div class="ratio-9-16 float-animation glass-card" style="animation-delay: 0.2s; padding: 8px;">
+        <img src="MyPhoto3.png" alt="Uvesh expressive" onerror="this.src='https://placehold.co/400x711/28123a/ff80aa?text=Expressive+Voice'">
+        <p style="text-align: center; margin-top: 12px;"><i class="fas fa-mask"></i> Cinematic Expression</p>
+      </div>
+      <!-- MyPhtoto1 -->
+      <div class="ratio-9-16 float-animation glass-card" style="animation-delay: 0.4s; padding: 8px;">
+        <img src="MyPhtoto1.png" alt="Uvesh signature" onerror="this.src='https://placehold.co/400x711/1a0830/ff629c?text=Artist+Presence'">
+        <p style="text-align: center; margin-top: 12px;"><i class="fas fa-dragon"></i> Anime Ready</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Trust & client brands -->
+<!-- About + Trust & Experience -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">The Voice Behind The Emotion</h2>
+    <div class="glass-card" style="padding: 48px; display: flex; flex-wrap: wrap; gap: 40px;">
+      <div style="flex: 1.5;">
+        <p style="font-size: 1.2rem; line-height: 1.5;"><strong>Uvesh</strong> – dedicated Hindi dubbing artist with <strong>3-4 years experience</strong>, over <strong>100+ completed projects</strong> and <strong>100+ happy clients</strong>. Specialized in deep emotional delivery, anime dubbing, comedy timing, and trailer-style narration.</p>
+        <ul style="margin-top: 28px; list-style: none;">
+          <li><i class="fas fa-check-circle" style="color:#ff4d82;"></i> Mic: Maono PD200X • Pro treatment</li>
+          <li><i class="fas fa-check-circle"></i> Software: Adobe Audition + Reaper</li>
+          <li><i class="fas fa-check-circle"></i> Fast turnaround: 24–48 hours</li>
+        </ul>
+      </div>
+      <div style="flex:1; background: rgba(255,70,130,0.08); border-radius: 32px; padding: 24px; text-align: center;">
+        <div><i class="fas fa-trophy fa-2x" style="color:#ff638c;"></i></div>
+        <h3>Trusted by creators</h3>
+        <p>YouTube Channels, Anime Communities, Game Studios</p>
+        <div class="glass-card" style="margin-top: 20px; display: inline-block; padding: 8px 16px;">⭐ 4.9/5 Client Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brands / Social proof -->
 <section>
   <div class="container">
     <h2 class="section-title">Trusted Collaborations</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
-      <div class="glass-card" style="padding: 12px 28px;"><i class="fab fa-youtube"></i> @AnimeVerseIndia</div>
+      <div class="glass-card" style="padding: 12px 28px;"><i class="fab fa-youtube"></i> AnimeVerse India</div>
+      <div class="glass-card" style="padding: 12px 28px;"><i class="fas fa-gamepad"></i> GameOn Studios</div>
+      <div class="glass-card" style="padding: 12px 28px;"><i class="fas fa-film"></i> TrailerNest</div>
       <div class="glass-card" style="padding: 12px 28px;"><i class="fas fa-podcast"></i> Storytel Hindi</div>
-      <div class="glass-card" style="padding: 12px 28px;"><i class="fas fa-gamepad"></i> Loco Gaming</div>
-      <div class="glass-card" style="padding: 12px 28px;"><i class="fab fa-spotify"></i> Audiobook Studio</div>
     </div>
   </div>
 </section>
 
-<!-- Professional pricing Section (with custom packages) -->
+<!-- Premium Pricing Packages -->
 <section id="packages">
   <div class="container">
-    <h2 class="section-title">🎙️ Professional Dubbing Packages</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 35px;">
-      <div class="glass-card" style="padding: 30px 20px; text-align: center;">
-        <h3 style="font-size: 1.7rem;">Basic</h3>
-        <div style="font-size: 2rem; font-weight: bold;">₹299</div>
+    <h2 class="section-title">Professional Dubbing Packages</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px;">
+      <div class="glass-card" style="padding: 32px 20px; text-align: center;">
+        <h3 style="font-size: 1.8rem;">Basic</h3>
+        <div style="font-size: 2.4rem; font-weight: bold; margin: 12px 0;">₹299</div>
         <p><i class="fas fa-clock"></i> 30–60 sec audio</p>
-        <p>Clean recording+noise removal</p>
-        <p>Instagram Reels / Shorts</p>
-        <p><i class="fas fa-truck"></i> 1-2 days delivery</p>
-        <a href="https://wa.me/917736512393?text=Book%20Basic%20₹299" class="btn-primary" style="margin-top: 16px;">Book Basic</a>
+        <p>Clean noise reduction • 1 voice style</p>
+        <p>📱 Reels / Shorts / Ads</p>
+        <p>⏱️ Delivery: 1-2 days</p>
+        <a href="https://wa.me/917736512393?text=Book%20Basic%20₹299%20voice%20package" class="btn-primary" style="margin-top: 20px;">Book Basic</a>
       </div>
-      <div class="glass-card" style="padding: 30px 20px; text-align: center; border-top: 3px solid #ff4d7a;">
+      <div class="glass-card" style="padding: 32px 20px; text-align: center; border-top: 3px solid #ff5a92;">
         <h3>Standard</h3>
-        <div style="font-size: 2rem; font-weight: bold;">₹699</div>
-        <p><i class="fas fa-video"></i> 4-6 min dubbing</p>
-        <p>Professional sync & emotions</p>
-        <p>Gaming / Commentary / Storytelling</p>
-        <p>1 free revision</p>
-        <a href="https://wa.me/917736512393?text=Standard%20₹699%20package" class="btn-primary">Choose Standard</a>
+        <div style="font-size: 2.4rem; font-weight: bold;">₹699</div>
+        <p><i class="fas fa-film"></i> 4–6 min dubbing</p>
+        <p>Professional sync + emotional/energetic acting</p>
+        <p>🎮 Gaming / Commentary / Storytelling</p>
+        <p>🔄 1 free revision</p>
+        <a href="https://wa.me/917736512393?text=Standard%20₹699%20package%20inquiry" class="btn-primary">Choose Standard</a>
       </div>
-      <div class="glass-card" style="padding: 30px 20px; text-align: center;">
+      <div class="glass-card" style="padding: 32px 20px; text-align: center;">
         <h3>Premium</h3>
-        <div style="font-size: 2rem; font-weight: bold;">₹1499+</div>
+        <div style="font-size: 2.4rem; font-weight: bold;">₹1499+</div>
         <p><i class="fas fa-dragon"></i> Up to 15 min project</p>
-        <p>Multiple character voices/ Anime support</p>
-        <p>Advanced mastering & revisions</p>
-        <p>Priority support</p>
-        <a href="https://wa.me/917736512393?text=Premium%20Project%20Inquiry" class="btn-primary">Customize</a>
+        <p>Multiple character voices / Anime dubbing</p>
+        <p>Advanced audio enhancement</p>
+        <p>Priority support & revisions</p>
+        <a href="https://wa.me/917736512393?text=Premium%20project%20enquiry" class="btn-primary">Custom Quote</a>
       </div>
     </div>
-    <p class="price-tag" style="text-align: center; width: fit-content; margin: 35px auto;">📩 Long-format & bulk work: special pricing — DM for quote</p>
+    <p class="glass-card" style="width: fit-content; margin: 35px auto 0; padding: 10px 20px;"><i class="fas fa-wallet"></i> Custom pricing for long videos & bulk work — DM for best deal</p>
   </div>
 </section>
 
-<!-- Voice Demo Section (preview files later will be updated) -->
+<!-- Demo Section (audio previews) -->
 <section id="demo">
   <div class="container">
-    <h2 class="section-title">Voice Spectrum 🎧</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 25px;">
-      <div class="glass-card" style="padding: 20px;"><h3>Emotional / Dramatic</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" style="width:100%; border-radius: 30px;"></audio></div>
+    <h2 class="section-title">Voice Demos 🎧</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(290px,1fr)); gap: 28px;">
+      <div class="glass-card" style="padding: 20px;"><h3>Emotional Deep Demo</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" style="width:100%; border-radius: 30px;"></audio></div>
       <div class="glass-card" style="padding: 20px;"><h3>Anime Character Dub</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" style="width:100%;"></audio></div>
-      <div class="glass-card" style="padding: 20px;"><h3>Comedy Timing</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" style="width:100%;"></audio></div>
-      <div class="glass-card" style="padding: 20px;"><h3>Trailer Narrative</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" style="width:100%;"></audio></div>
+      <div class="glass-card" style="padding: 20px;"><h3>Comedy / Cartoon Timing</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" style="width:100%;"></audio></div>
+      <div class="glass-card" style="padding: 20px;"><h3>Trailer Narrator Style</h3><audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" style="width:100%;"></audio></div>
     </div>
-    <p class="price-tag" style="margin-top: 20px;">* Real demo tracks being uploaded soon - Contact for custom samples</p>
+    <p style="text-align: center; margin-top: 28px;"><i class="fas fa-cloud-upload-alt"></i> Custom samples available upon request</p>
   </div>
 </section>
 
-<!-- Why Choose Me + Stats -->
+<!-- Why Choose + Emotion -->
 <section>
   <div class="container">
-    <h2 class="section-title">Why Work With Uvesh?</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <div class="glass-card" style="width: 220px; text-align: center; padding: 25px;"><i class="fas fa-chart-line fa-3x" style="color:#ff4d7a;"></i><h3>100+ Projects</h3><p>Proven dubbing excellence</p></div>
-      <div class="glass-card" style="width: 220px; text-align: center; padding: 25px;"><i class="fas fa-clock fa-3x"></i><h3>Fast Delivery</h3><p>24h express available</p></div>
-      <div class="glass-card" style="width: 220px; text-align: center; padding: 25px;"><i class="fas fa-language fa-3x"></i><h3>Pure Hindi Fluent</h3><p>Natural & Emotional</p></div>
+    <h2 class="section-title">Why Uvesh?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+      <div class="glass-card" style="width: 230px; text-align: center; padding: 30px 15px;"><i class="fas fa-heartbeat fa-3x" style="color:#ff5a92;"></i><h4>Deep Emotional Delivery</h4></div>
+      <div class="glass-card" style="width: 230px; text-align: center; padding: 30px 15px;"><i class="fas fa-clock fa-3x"></i><h4>Fast 24h Turnaround</h4></div>
+      <div class="glass-card" style="width: 230px; text-align: center; padding: 30px 15px;"><i class="fas fa-rupee-sign fa-3x"></i><h4>Affordable Premium Quality</h4></div>
     </div>
   </div>
 </section>
 
-<!-- Testimonials Real Feel -->
+<!-- Testimonials -->
 <section>
   <div class="container">
-    <h2 class="section-title">Client Love</h2>
-    <div style="display: flex; overflow-x: auto; gap: 25px; padding-bottom: 12px;">
-      <div class="glass-card" style="min-width: 280px; padding: 28px;"><i class="fas fa-star" style="color:gold;"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>“Uvesh’s anime dub gave chills. Perfect emotional sync.”</p><strong>- Anime Director</strong></div>
-      <div class="glass-card" style="min-width: 280px; padding: 28px;"><i class="fas fa-quote-left"></i><p>“Comedy timing is incredible + very professional. Highly recommend!”</p><strong>— YouTuber 500k</strong></div>
-      <div class="glass-card" style="min-width: 280px; padding: 28px;"><i class="fas fa-microphone-alt"></i><p>“Fastest delivery, super clean audio. Will work again.”</p><strong>— Gaming Creator</strong></div>
+    <h2 class="section-title">Client Words</h2>
+    <div style="display: flex; overflow-x: auto; gap: 28px; padding-bottom: 12px;">
+      <div class="glass-card" style="min-width: 290px; padding: 28px;"><i class="fas fa-quote-left fa-2x" style="color:#ff5c92;"></i><p>“Uvesh’s anime dubbing gave me chills — perfect emotional sync. Highly recommend.”</p><strong>— Anime Creator</strong></div>
+      <div class="glass-card" style="min-width: 290px; padding: 28px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>“Comedy timing is outstanding, plus super professional. Fast delivery!”</p><strong>— YouTuber, 400k</strong></div>
+      <div class="glass-card" style="min-width: 290px; padding: 28px;"><i class="fas fa-microphone-alt"></i><p>“Premium quality voice, very natural Hindi accent. Will work again.”</p><strong>— Ad Agency</strong></div>
     </div>
   </div>
 </section>
 
-<!-- Direct Contact + WhatsApp + email -->
+<!-- Contact & Call to action -->
 <section id="contact">
   <div class="container">
-    <div class="glass-card" style="padding: 50px; text-align: center;">
-      <h2 style="font-size: 2rem;">Start Your Voice Journey</h2>
-      <p style="margin: 20px auto;">Book a demo, discuss your script, or just ask for a quote.</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        <a href="https://wa.me/917736512393?text=Hi%20Uvesh,%20I%20need%20professional%20voice%20over" class="btn-primary" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp +91 7736512393</a>
-        <a href="mailto:uvesh@voicestudio.in" class="btn-outline"><i class="fas fa-envelope"></i> Email Artist</a>
-        <a href="#" class="btn-outline"><i class="fab fa-instagram"></i> Studio IG</a>
+    <div class="glass-card" style="padding: 55px 30px; text-align: center;">
+      <h2 style="font-size: 2rem;">Give Your Characters a Powerful Voice</h2>
+      <p style="margin: 22px auto;">Let's discuss your project — Anime, Commercial, YouTube, or Trailer.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;">
+        <a href="https://wa.me/917736512393?text=Hello%20Uvesh,%20I'm%20interested%20in%20voice%20over%20work" class="btn-primary" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp +91 7736512393</a>
+        <a href="mailto:contact@uveshvoice.com" class="btn-outline"><i class="fas fa-envelope"></i> Email Artist</a>
+        <a href="#" class="btn-outline"><i class="fab fa-instagram"></i> Instagram DM</a>
       </div>
-      <div class="price-tag" style="margin-top: 35px;"><i class="fas fa-shield-alt"></i> 100% secure, high-quality, fast turnaround</div>
+      <div class="glass-card" style="display: inline-block; margin-top: 35px; padding: 10px 24px;"><i class="fas fa-shield-alt"></i> 100% Satisfaction • Professional Quality</div>
     </div>
   </div>
 </section>
 
-<footer style="background:#020007; padding: 35px; text-align: center; border-top:1px solid #ff4070;">
-  <p>© 2026 Uvesh | Professional Hindi Dubbing Artist — Every Emotion Has A Voice</p>
-  <div style="margin-top: 12px;"><i class="fab fa-whatsapp"></i> +91 7736512393 | <i class="fas fa-headphones"></i> 24/7 creative support</div>
+<footer style="background:#05010c; padding: 40px 20px; text-align: center; border-top: 1px solid #ff3b7e40;">
+  <i class="fas fa-microphone-alt" style="font-size: 28px; color:#ff568e;"></i>
+  <p style="margin: 12px 0;">“A Voice Can Create Emotion Beyond Imagination”</p>
+  <p>© 2026 Uvesh — Professional Hindi Dubbing Artist | 100+ Projects Delivered</p>
 </footer>
 </main>
 
 <script>
-  // loader & advanced FX
+  // Loader hide
   window.addEventListener('load', () => {
     setTimeout(() => {
-      const loaderDiv = document.getElementById('loader');
-      if(loaderDiv) {
-        loaderDiv.style.opacity = '0';
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.style.opacity = '0';
         setTimeout(() => {
-          loaderDiv.style.display = 'none';
+          loader.style.display = 'none';
           document.getElementById('mainContent').style.opacity = '1';
         }, 800);
       }
     }, 1500);
   });
 
-  // Cursor glow + particles
-  const glowDiv = document.getElementById('cursorGlow');
+  // Cursor follow
+  const cursor = document.getElementById('cursorGlow');
   document.addEventListener('mousemove', (e) => {
-    glowDiv.style.left = e.clientX + 'px';
-    glowDiv.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
   });
 
-  const canvas = document.getElementById('particleCanvas');
+  // Particles network
+  const canvas = document.getElementById('particlesCanvas');
   let ctx = canvas.getContext('2d');
-  let particles = [];
+  let particlesArray = [];
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   }
   window.addEventListener('resize', resizeCanvas);
   resizeCanvas();
-  for(let i =0; i<180; i++) {
-    particles.push({
-      x: Math.random()*canvas.width, y: Math.random()*canvas.height, r: Math.random()*2+0.6,
-      alpha: Math.random()*0.5+0.2, dx: (Math.random()-0.5)*0.2, dy: (Math.random()-0.5)*0.15
+  for (let i = 0; i < 160; i++) {
+    particlesArray.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 2 + 1,
+      alpha: Math.random() * 0.5 + 0.2,
+      dx: (Math.random() - 0.5) * 0.3,
+      dy: (Math.random() - 0.5) * 0.2
     });
   }
   function drawParticles() {
-    if(!ctx) return;
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    particles.forEach(p => {
+    if (!ctx) return;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particlesArray.forEach(p => {
       ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(255, 70, 130, ${p.alpha})`;
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 100, 150, ${p.alpha})`;
       ctx.fill();
-      p.x += p.dx; p.y += p.dy;
-      if(p.x<0) p.x=canvas.width; if(p.x>canvas.width) p.x=0;
-      if(p.y<0) p.y=canvas.height; if(p.y>canvas.height) p.y=0;
+      p.x += p.dx;
+      p.y += p.dy;
+      if (p.x < 0) p.x = canvas.width;
+      if (p.x > canvas.width) p.x = 0;
+      if (p.y < 0) p.y = canvas.height;
+      if (p.y > canvas.height) p.y = 0;
     });
     requestAnimationFrame(drawParticles);
   }
   drawParticles();
 
-  // smooth anchor
+  // smooth anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      const target = this.getAttribute('href');
-      if(target !== "#" && target.length > 1) {
-        const elem = document.querySelector(target);
-        if(elem) { e.preventDefault(); elem.scrollIntoView({behavior: "smooth"}); }
+      const targetId = this.getAttribute('href');
+      if (targetId !== "#" && targetId.length > 1) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     });
   });
