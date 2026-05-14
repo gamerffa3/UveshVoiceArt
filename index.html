@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Uvesh | Hyperdimensional Voice Alchemist | Hindi Dubbing</title>
-  <meta name="description" content="Uvesh — Not just a voice, an experience. Cinematic Hindi dubbing, anime fusion, emotional resonance. 60% OFF for visionaries.">
-  <meta name="keywords" content="Uvesh, Voice Artist, Hindi Dubbing, Anime Voice, Emotional Narration, Game Voice">
-  <meta name="author" content="Uvesh | Voice Alchemy Studio">
+  <title>Uvesh | Professional Hindi Voice Artist | Dubbing & Voice Over</title>
+  <meta name="description" content="Uvesh — Professional Hindi Voice Actor & Dubbing Artist. 100+ projects, anime dubbing, emotional voice. 60% OFF limited offer.">
+  <meta name="keywords" content="Uvesh, Voice Artist, Hindi Dubbing, Anime Voice, Voice Over Artist">
+  <meta name="author" content="Uvesh Voice Studio">
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
   <style>
@@ -20,7 +20,7 @@
 
     body {
       background: #05010f;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Inter', sans-serif;
       color: #f1ebfc;
       overflow-x: hidden;
     }
@@ -41,7 +41,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at 70% 20%, rgba(60, 10, 80, 0.5), #010005 95%);
+      background: radial-gradient(circle at 70% 20%, rgba(60, 10, 80, 0.4), #010005 95%);
       z-index: -1;
       pointer-events: none;
     }
@@ -53,178 +53,214 @@
     }
 
     section {
-      padding: 100px 0;
+      padding: 90px 0;
       position: relative;
     }
 
-    .crystal-card {
-      background: rgba(8, 4, 22, 0.65);
-      backdrop-filter: blur(18px);
-      border-radius: 48px;
-      border: 1px solid rgba(210, 80, 160, 0.6);
-      transition: all 0.5s cubic-bezier(0.2, 0.95, 0.4, 1.1);
-      box-shadow: 0 30px 45px -15px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.08);
+    .glass-card {
+      background: rgba(10, 6, 25, 0.7);
+      backdrop-filter: blur(16px);
+      border-radius: 40px;
+      border: 1px solid rgba(255, 80, 140, 0.4);
+      transition: all 0.4s ease;
+      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.5);
     }
-    .crystal-card:hover {
-      transform: translateY(-10px) scale(1.01);
-      border-color: #ff7bcb;
-      box-shadow: 0 40px 60px -18px #ff318060;
+    .glass-card:hover {
+      transform: translateY(-6px);
+      border-color: #ff6ea0;
+      box-shadow: 0 35px 50px -12px rgba(255, 60, 140, 0.3);
     }
 
-    .spectrum-text {
-      background: linear-gradient(125deg, #ffffff, #ffb3d9, #c27eff, #ff6090);
+    .gradient-text {
+      background: linear-gradient(135deg, #fff, #ff8eb5, #dc8aff);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       font-weight: 800;
-      letter-spacing: -0.02em;
     }
 
-    .pulse-glow {
-      animation: softPulse 3s infinite alternate;
-    }
-    @keyframes softPulse {
-      0% { text-shadow: 0 0 2px #ff4d82; opacity: 0.95; }
-      100% { text-shadow: 0 0 22px #ff80b0; opacity: 1; }
-    }
-
-    .btn-neon, .btn-ghost, .btn-vibe {
+    .btn-primary, .btn-outline {
       display: inline-block;
-      padding: 14px 38px;
-      border-radius: 80px;
+      padding: 12px 34px;
+      border-radius: 60px;
       font-weight: 700;
       text-decoration: none;
-      transition: 0.3s ease;
-      margin: 8px;
-      letter-spacing: 0.5px;
+      transition: 0.25s;
+      margin: 6px;
     }
-    .btn-neon {
-      background: linear-gradient(105deg, #e61e6c, #a01050);
+    .btn-primary {
+      background: linear-gradient(95deg, #ff1f62, #b8004a);
       color: white;
-      box-shadow: 0 10px 24px #ff1f6e60;
-      border: none;
+      box-shadow: 0 8px 20px rgba(255, 30, 90, 0.4);
     }
-    .btn-ghost {
-      background: rgba(0,0,0,0.4);
-      border: 1.5px solid #ff82b2;
-      color: #ffd9ec;
+    .btn-outline {
+      background: rgba(0,0,0,0.5);
+      border: 1.5px solid #ff6a9e;
+      color: #ffc0da;
     }
-    .btn-vibe {
-      background: #491e4bdd;
-      backdrop-filter: blur(10px);
-      color: white;
-      font-weight: bold;
-    }
-    .btn-neon:hover, .btn-ghost:hover { transform: scale(1.02); filter: brightness(1.08); box-shadow: 0 0 28px #ff52a0; }
+    .btn-primary:hover, .btn-outline:hover { transform: scale(1.02); box-shadow: 0 0 20px #ff4685; }
 
-    .demo-matrix {
+    /* Professional Demo Card */
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .demo-card {
+      padding: 28px;
+      text-align: center;
+    }
+    .demo-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #ff1f62, #b8004a);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 28px;
+      box-shadow: 0 0 20px rgba(255, 30, 90, 0.4);
+    }
+    .demo-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .demo-desc {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+    
+    /* Custom Clean Audio Player */
+    .custom-audio-player {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 60px;
+      padding: 8px 12px;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .play-btn {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #ff2e6a, #c0004a);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .play-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #ff2e6a;
+    }
+    .play-btn.playing {
+      background: linear-gradient(135deg, #00c9a7, #00a88a);
+    }
+    .audio-status {
+      font-size: 0.75rem;
+      color: #ff88bb;
+      background: rgba(255,255,255,0.1);
+      padding: 4px 12px;
+      border-radius: 30px;
+    }
+    .audio-progress {
+      flex: 1;
+      min-width: 120px;
+      height: 4px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+    }
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #ff6a9e, #ff2e6a);
+      border-radius: 4px;
+      transition: width 0.1s linear;
+    }
+    .time-display {
+      font-size: 0.7rem;
+      font-family: monospace;
+      background: rgba(0,0,0,0.5);
+      padding: 4px 8px;
+      border-radius: 20px;
+    }
+
+    .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 32px;
     }
-
-    .demo-unit {
-      padding: 28px 24px;
-      transition: all 0.3s;
-    }
-
-    .vapor-audio {
-      background: rgba(0, 0, 0, 0.65);
-      border-radius: 100px;
-      padding: 10px 14px;
-      margin: 18px 0 8px;
-      backdrop-filter: blur(8px);
-      border: 1px solid #ff61a6;
-    }
-    audio {
-      width: 100%;
-      border-radius: 60px;
-      height: 46px;
-      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
-    }
-    audio::-webkit-media-controls-panel {
-      background-color: #130c24;
-    }
-
-    .wave-reaction {
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 12px;
-      color: #c8a8e0;
-      justify-content: center;
-    }
-
-    .price-vault {
+    .price-card {
       text-align: center;
-      padding: 40px 28px;
+      padding: 36px 24px;
     }
-    .strike-old { text-decoration: line-through; font-size: 1.25rem; opacity: 0.7; }
-    .fire-price { font-size: 2.6rem; font-weight: 800; color: #ff88bc; letter-spacing: -1px; }
-    .savings-badge {
-      background: #ff2e6a;
+    .price-original { text-decoration: line-through; font-size: 1.2rem; opacity: 0.7; }
+    .price-discount { font-size: 2.2rem; font-weight: 800; color: #ff7aa8; }
+    .badge-off {
+      background: #ff3066;
       border-radius: 40px;
-      padding: 6px 18px;
-      font-weight: bold;
+      padding: 4px 12px;
+      font-size: 0.8rem;
       display: inline-block;
     }
 
-    .showcase-nav {
+    .nav-pills {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-bottom: 48px;
+      gap: 28px;
+      margin-bottom: 40px;
       flex-wrap: wrap;
     }
-    .pill-nav {
+    .nav-pill {
       font-weight: 600;
       cursor: pointer;
-      padding: 10px 28px;
-      border-radius: 50px;
+      padding: 8px 28px;
+      border-radius: 60px;
       transition: 0.2s;
-      background: rgba(255, 65, 130, 0.2);
-      backdrop-filter: blur(4px);
+      background: rgba(255, 70, 130, 0.15);
     }
-    .pill-nav:hover {
-      background: #ff4488;
-      color: #0a0010;
-      transform: scale(1.02);
-    }
+    .nav-pill:hover { background: #ff4685; color: white; }
 
-    .gallery-flex {
+    .photo-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 48px;
+      gap: 40px;
     }
-    .portrait-card {
-      max-width: 240px;
-      border-radius: 36px;
+    .photo-card {
+      max-width: 220px;
+      border-radius: 32px;
       overflow: hidden;
-      transition: transform 0.3s;
+      padding: 8px;
     }
-    .portrait-card img {
+    .photo-card img {
       width: 100%;
+      border-radius: 28px;
       display: block;
-      transition: 0.3s;
-    }
-    .portrait-card:hover {
-      transform: translateY(-12px);
     }
 
     @media (max-width: 760px) {
-      section { padding: 70px 0; }
+      section { padding: 60px 0; }
       .container { padding: 0 20px; }
     }
 
     footer {
-      background: #010003cc;
+      background: #020006;
       text-align: center;
-      padding: 50px 24px;
-      border-top: 1px solid #ff528a40;
-      backdrop-filter: blur(4px);
+      padding: 45px 20px;
+      border-top: 1px solid #ff3b7e40;
     }
   </style>
 </head>
@@ -234,107 +270,107 @@
 <div class="hyper-overlay"></div>
 
 <main>
-  <div class="container" style="margin-top: 40px;">
-    <div class="showcase-nav">
-      <div class="pill-nav" data-section="pricing-planet"><i class="fas fa-crown"></i> Packages</div>
-      <div class="pill-nav" data-section="vortex-demos"><i class="fas fa-head-side-vr"></i> Demo Voices</div>
-      <div class="pill-nav" data-section="cosmic-contact"><i class="fas fa-comet"></i> Connect</div>
+  <div class="container" style="margin-top: 30px;">
+    <div class="nav-pills">
+      <div class="nav-pill" data-section="packages"><i class="fas fa-tags"></i> Packages</div>
+      <div class="nav-pill" data-section="demos"><i class="fas fa-microphone-alt"></i> Voice Demos</div>
+      <div class="nav-pill" data-section="contact"><i class="fas fa-headset"></i> Contact</div>
     </div>
   </div>
 
   <!-- Hero Section -->
-  <section style="padding-top: 20px;">
+  <section style="padding-top: 30px;">
     <div class="container">
-      <div class="crystal-card" style="padding: 56px 32px; text-align: center;">
-        <div class="savings-badge" style="background:#b5176eaa; margin-bottom: 20px;"><i class="fas fa-waveform"></i> 187+ Cinematic Projects</div>
-        <h1 style="font-size: clamp(3.2rem, 10vw, 5.6rem); font-family: 'Syne';" class="spectrum-text pulse-glow">Uvesh</h1>
-        <p style="font-size: 1.4rem; margin-top: 10px;"><i class="fas fa-mask"></i> Hindi Voice Alchemist | Anime Fusion | Emotional Cinematics</p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 36px 0;">
-          <span class="crystal-card" style="padding: 8px 24px;">🎭 Hyperreal Acting</span>
-          <span class="crystal-card" style="padding: 8px 24px;">🐉 Shonen / Seinen Voices</span>
-          <span class="crystal-card" style="padding: 8px 24px;">⚡ Cinematic Trailers</span>
-          <span class="crystal-card" style="padding: 8px 24px;">🎙️ Immersive Narration</span>
+      <div class="glass-card" style="padding: 52px 32px; text-align: center;">
+        <div style="display: inline-block; background: #ff3b7e30; border-radius: 60px; padding: 6px 20px; margin-bottom: 20px;">
+          <i class="fas fa-chart-line"></i> 100+ Projects | 100+ Happy Clients
+        </div>
+        <h1 style="font-size: clamp(3rem, 9vw, 5rem); font-family: 'Syne';" class="gradient-text">Uvesh</h1>
+        <p style="font-size: 1.3rem;"><i class="fas fa-microphone-alt" style="color:#ff6d9e;"></i> Professional Hindi Voice Artist | Anime Dubbing Specialist</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 32px 0;">
+          <span class="glass-card" style="padding: 8px 20px;">🎭 Cinematic Narration</span>
+          <span class="glass-card" style="padding: 8px 20px;">😂 Comedy Timing</span>
+          <span class="glass-card" style="padding: 8px 20px;">🐉 Anime Dubbing</span>
+          <span class="glass-card" style="padding: 8px 20px;">🎮 Gaming Voices</span>
         </div>
         <div>
-          <a href="#pricing-planet" class="btn-neon"><i class="fas fa-gem"></i> 60% OFF</a>
-          <a href="https://wa.me/917736512393" class="btn-ghost"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="#packages" class="btn-primary"><i class="fas fa-tag"></i> Packages & 60% OFF</a>
+          <a href="https://wa.me/917736512393" class="btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PHOTO GALLERY -->
+  <!-- Photos -->
   <section>
     <div class="container">
-      <h2 class="spectrum-text" style="font-size: 2.4rem; text-align: center; margin-bottom: 3rem;">✦ Gallery ✦</h2>
-      <div class="gallery-flex">
-        <div class="portrait-card crystal-card" style="padding: 8px;"><img src="MyPhoto2.png" onerror="this.src='https://placehold.co/400x711/2d0f33/ff97be?text=Uvesh'"></div>
-        <div class="portrait-card crystal-card" style="padding: 8px;"><img src="MyPhoto3.png" onerror="this.src='https://placehold.co/400x711/391940/ff9ac1?text=Voice'"></div>
-        <div class="portrait-card crystal-card" style="padding: 8px;"><img src="MyPhtoto1.png" onerror="this.src='https://placehold.co/400x711/230d2e/ffaacc?text=Artist'"></div>
+      <h2 class="gradient-text" style="font-size: 2.3rem; text-align: center; margin-bottom: 2rem;">Gallery</h2>
+      <div class="photo-gallery">
+        <div class="glass-card photo-card"><img src="MyPhoto2.png" onerror="this.src='https://placehold.co/400x711/1f0a2a/ff80aa?text=Uvesh'"></div>
+        <div class="glass-card photo-card"><img src="MyPhoto3.png" onerror="this.src='https://placehold.co/400x711/261130/ff8ab5?text=Voice'"></div>
+        <div class="glass-card photo-card"><img src="MyPhtoto1.png" onerror="this.src='https://placehold.co/400x711/1a082e/ff7aad?text=Artist'"></div>
       </div>
     </div>
   </section>
 
-  <!-- DEMO SECTION - Clean, just audio players -->
-  <section id="vortex-demos">
+  <!-- Voice Demos Section - Professional Clean -->
+  <section id="demos">
     <div class="container">
-      <h2 class="spectrum-text" style="font-size: 2.5rem; text-align: center;">🎧 Demo Voices</h2>
-      <p style="text-align: center; margin-bottom: 45px; opacity: 0.8;">Click play to experience the range</p>
-      <div class="demo-matrix" id="dynamic-demo-container">
-        <!-- demo players will be injected here -->
-      </div>
+      <h2 class="gradient-text" style="font-size: 2.3rem; text-align: center; margin-bottom: 0.5rem;">🎧 Voice Demos</h2>
+      <p style="text-align: center; margin-bottom: 2.5rem; opacity: 0.8;">Click play to listen — only one demo plays at a time</p>
+      <div class="demo-grid" id="demo-container"></div>
     </div>
   </section>
 
-  <!-- PRICING with 60% Discount -->
-  <section id="pricing-planet">
+  <!-- Pricing -->
+  <section id="packages">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 20px;">
-        <span class="savings-badge"><i class="fas fa-bolt"></i> FLAT 60% OFF</span>
+      <div style="text-align: center; margin-bottom: 30px;">
+        <span class="badge-off"><i class="fas fa-fire"></i> LIMITED OFFER: FLAT 60% OFF</span>
       </div>
-      <h2 class="spectrum-text" style="font-size: 2.3rem; text-align: center;">Packages</h2>
-      <div class="demo-matrix" style="margin-top: 48px;">
-        <div class="crystal-card price-vault">
+      <h2 class="gradient-text" style="font-size: 2rem; text-align: center;">Professional Packages</h2>
+      <div class="pricing-grid" style="margin-top: 40px;">
+        <div class="glass-card price-card">
           <h3>Basic Voice Pack</h3>
-          <div class="strike-old">₹749</div>
-          <div class="fire-price">₹299</div>
-          <div class="savings-badge">SAVE 60%</div>
-          <p style="margin-top: 20px;"><i class="fas fa-clock"></i> 30–60 sec audio</p>
+          <div class="price-original">₹749</div>
+          <div class="price-discount">₹299</div>
+          <div class="badge-off">-60%</div>
+          <p style="margin: 15px 0;"><i class="fas fa-clock"></i> 30–60 sec audio</p>
           <p>Clean noise reduction</p>
-          <a href="https://wa.me/917736512393?text=I%20want%20Basic%20₹299%20(60%25%20OFF)" class="btn-vibe" style="margin-top: 24px;">Book Now →</a>
+          <a href="https://wa.me/917736512393?text=Book%20Basic%20₹299" class="btn-primary" style="margin-top: 20px;">Book Now →</a>
         </div>
-        <div class="crystal-card price-vault" style="border-top: 2px solid #ff60b0;">
+        <div class="glass-card price-card" style="border-top: 2px solid #ff7aa8;">
           <h3>Standard YouTube</h3>
-          <div class="strike-old">₹1749</div>
-          <div class="fire-price">₹699</div>
-          <div class="savings-badge">-60%</div>
-          <p><i class="fas fa-video"></i> 4-6 min dubbing</p>
+          <div class="price-original">₹1749</div>
+          <div class="price-discount">₹699</div>
+          <div class="badge-off">-60%</div>
+          <p style="margin: 15px 0;"><i class="fas fa-video"></i> 4-6 min dubbing</p>
           <p>1 free revision</p>
-          <a href="https://wa.me/917736512393?text=Book%20Standard%20₹699%20deal" class="btn-neon">Book Now</a>
+          <a href="https://wa.me/917736512393?text=Standard%20₹699" class="btn-primary">Book Now →</a>
         </div>
-        <div class="crystal-card price-vault">
+        <div class="glass-card price-card">
           <h3>Premium Anime/Game</h3>
-          <div class="strike-old">₹3749</div>
-          <div class="fire-price">₹1499</div>
-          <div class="savings-badge">-60% OFF</div>
-          <p><i class="fas fa-dragon"></i> Up to 15 min project</p>
+          <div class="price-original">₹3749</div>
+          <div class="price-discount">₹1499</div>
+          <div class="badge-off">-60%</div>
+          <p style="margin: 15px 0;"><i class="fas fa-dragon"></i> Up to 15 min project</p>
           <p>Multiple character voices</p>
-          <a href="https://wa.me/917736512393?text=Premium%20₹1499%20Project" class="btn-ghost">Get Premium</a>
+          <a href="https://wa.me/917736512393?text=Premium%20₹1499" class="btn-primary">Get Premium</a>
         </div>
       </div>
-      <p style="text-align: center; margin-top: 38px;"><i class="fas fa-star-of-life"></i> Custom pricing for bulk / long videos — DM on WhatsApp</p>
+      <p style="text-align: center; margin-top: 38px;"><i class="fas fa-gem"></i> Custom pricing for bulk / long videos — DM on WhatsApp</p>
     </div>
   </section>
 
-  <!-- Why Choose Me -->
+  <!-- Features -->
   <section>
     <div class="container">
-      <h2 class="spectrum-text" style="text-align: center; font-size: 2rem;">✦ Why Uvesh? ✦</h2>
-      <div class="demo-matrix" style="margin-top: 48px;">
-        <div class="crystal-card" style="padding: 32px; text-align: center;"><i class="fas fa-heartbeat fa-3x" style="color:#ff7bcb;"></i><h3>Deep Emotional Connect</h3><p>Every dialogue feels real</p></div>
-        <div class="crystal-card" style="padding: 32px; text-align: center;"><i class="fas fa-hourglass-half fa-3x"></i><h3>24H Fast Delivery</h3><p>Urgent projects accepted</p></div>
-        <div class="crystal-card" style="padding: 32px; text-align: center;"><i class="fas fa-microphone-alt fa-3x"></i><h3>Studio Quality</h3><p>Pro editing & mastering</p></div>
-        <div class="crystal-card" style="padding: 32px; text-align: center;"><i class="fas fa-star fa-3x"></i><h3>100+ Satisfied Clients</h3><p>Trusted by creators</p></div>
+      <h2 class="gradient-text" style="text-align: center; font-size: 2rem;">Why Choose Uvesh?</h2>
+      <div class="pricing-grid" style="margin-top: 40px;">
+        <div class="glass-card" style="padding: 30px; text-align: center;"><i class="fas fa-heartbeat fa-3x" style="color:#ff709e;"></i><h3 style="margin-top: 12px;">Deep Emotional Connect</h3><p>Every dialogue feels real</p></div>
+        <div class="glass-card" style="padding: 30px; text-align: center;"><i class="fas fa-hourglass-half fa-3x"></i><h3 style="margin-top: 12px;">24H Fast Delivery</h3><p>Urgent projects accepted</p></div>
+        <div class="glass-card" style="padding: 30px; text-align: center;"><i class="fas fa-microphone-alt fa-3x"></i><h3 style="margin-top: 12px;">Studio Quality</h3><p>Pro editing & mastering</p></div>
+        <div class="glass-card" style="padding: 30px; text-align: center;"><i class="fas fa-star fa-3x"></i><h3 style="margin-top: 12px;">100+ Satisfied Clients</h3><p>Trusted by creators</p></div>
       </div>
     </div>
   </section>
@@ -342,134 +378,217 @@
   <!-- Testimonials -->
   <section>
     <div class="container">
-      <h2 class="spectrum-text" style="text-align: center;">✧ Testimonials ✧</h2>
-      <div class="demo-matrix" style="margin-top: 40px;">
-        <div class="crystal-card" style="padding: 32px;"><i class="fas fa-quote-right fa-2x" style="color:#ff8ec6;"></i><p>“Uvesh's anime dubbing gave chills, perfect emotion. Highly recommended!”</p><strong>— Anime Studio India</strong></div>
-        <div class="crystal-card" style="padding: 32px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>“Professional, fast delivery and comedy timing is top notch.”</p><strong>— 500k YouTuber</strong></div>
+      <h2 class="gradient-text" style="text-align: center;">Client Love</h2>
+      <div class="pricing-grid" style="margin-top: 35px;">
+        <div class="glass-card" style="padding: 30px;"><i class="fas fa-quote-left fa-2x"></i><p style="margin: 12px 0;">“Uvesh's anime dubbing gave chills, perfect emotion. Highly recommended!”</p><strong>— Anime Studio India</strong></div>
+        <div class="glass-card" style="padding: 30px;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p style="margin: 12px 0;">“Professional, fast delivery and comedy timing is top notch.”</p><strong>— 500k YouTuber</strong></div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="cosmic-contact">
+  <!-- Contact -->
+  <section id="contact">
     <div class="container">
-      <div class="crystal-card" style="padding: 60px 30px; text-align: center;">
-        <h2 class="spectrum-text" style="font-size: 2.2rem;">Start Your Voice Journey</h2>
-        <p style="margin: 18px 0;">Discuss your script, get a custom quote, or book a demo now.</p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-          <a href="https://wa.me/917736512393?text=Hi%20Uvesh,%20I%20need%20a%20professional%20voice%20over" class="btn-neon" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp +91 7736512393</a>
-          <a href="mailto:uvesh@voicestudio.com" class="btn-ghost"><i class="fas fa-envelope"></i> Email Artist</a>
-          <a href="#" class="btn-vibe"><i class="fab fa-instagram"></i> Instagram DM</a>
+      <div class="glass-card" style="padding: 55px 30px; text-align: center;">
+        <h2 class="gradient-text" style="font-size: 2rem;">Start Your Voice Journey</h2>
+        <p style="margin: 20px 0;">Discuss your script, get a custom quote, or book a demo now.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;">
+          <a href="https://wa.me/917736512393" class="btn-primary" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp +91 7736512393</a>
+          <a href="mailto:uvesh@voicestudio.com" class="btn-outline"><i class="fas fa-envelope"></i> Email Artist</a>
+          <a href="#" class="btn-outline"><i class="fab fa-instagram"></i> Instagram DM</a>
         </div>
-        <div class="savings-badge" style="background: none; border: 1px solid #ff77aa; margin-top: 40px;">🎧 Pro Quality | 100% Satisfaction</div>
+        <div class="badge-off" style="margin-top: 38px; background: none; border: 1px solid #ff5a92;">🎧 Pro Quality | 100% Satisfaction</div>
       </div>
     </div>
   </section>
 
   <footer>
-    <i class="fas fa-microphone-alt" style="font-size: 38px; color:#ff77bc;"></i>
-    <p style="margin: 14px 0; font-size: 1.1rem;">“A Voice Can Create Emotion Beyond Imagination”</p>
-    <p>© 2026 Uvesh — Cinematic Voice Artist | 100+ Projects Delivered</p>
+    <i class="fas fa-microphone-alt" style="font-size: 32px; color:#ff709e;"></i>
+    <p style="margin: 12px 0;">“A Voice Can Create Emotion Beyond Imagination”</p>
+    <p>© 2026 Uvesh — Professional Hindi Voice Artist | 100+ Projects Delivered</p>
   </footer>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
-  // --- THREE.JS BACKGROUND ---
+  // THREE.JS Background
   const canvas = document.getElementById('three-bg');
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
 
-  const starCount = 1800;
-  const starGeo = new THREE.BufferGeometry();
-  const starPos = new Float32Array(starCount * 3);
-  for (let i = 0; i < starCount; i++) {
-    starPos[i*3] = (Math.random() - 0.5) * 300;
-    starPos[i*3+1] = (Math.random() - 0.5) * 180;
-    starPos[i*3+2] = (Math.random() - 0.5) * 120 - 40;
+  const particlesGeometry = new THREE.BufferGeometry();
+  const particlesCount = 1500;
+  const posArray = new Float32Array(particlesCount * 3);
+  for(let i = 0; i < particlesCount; i++) {
+    posArray[i*3] = (Math.random() - 0.5) * 200;
+    posArray[i*3+1] = (Math.random() - 0.5) * 100;
+    posArray[i*3+2] = (Math.random() - 0.5) * 80 - 40;
   }
-  starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
-  const starMaterial = new THREE.PointsMaterial({ color: 0xff6daa, size: 0.18, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending });
-  const stars = new THREE.Points(starGeo, starMaterial);
-  scene.add(stars);
+  particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+  const particlesMaterial = new THREE.PointsMaterial({ color: 0xff4d82, size: 0.15, transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending });
+  const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+  scene.add(particlesMesh);
   
-  const knotGeo = new THREE.TorusKnotGeometry(1.2, 0.18, 180, 24, 3, 4);
-  const knotMat = new THREE.MeshStandardMaterial({ color: 0xff4d88, emissive: 0xff2360, emissiveIntensity: 0.7, roughness: 0.3, metalness: 0.8 });
-  const knot = new THREE.Mesh(knotGeo, knotMat);
-  scene.add(knot);
+  const ringGeo = new THREE.TorusGeometry(1.8, 0.05, 64, 300);
+  const ringMat = new THREE.MeshStandardMaterial({ color: 0xff5a92, emissive: 0xff2060, emissiveIntensity: 0.6 });
+  const ring = new THREE.Mesh(ringGeo, ringMat);
+  scene.add(ring);
   
-  const amb = new THREE.AmbientLight(0x220033);
-  scene.add(amb);
-  const light1 = new THREE.PointLight(0xff3e7a, 0.9);
-  light1.position.set(2, 3, 5);
-  scene.add(light1);
-  const backLight = new THREE.PointLight(0xac4eff, 0.6);
-  backLight.position.set(-2, 1, -5);
-  scene.add(backLight);
+  const ambientLight = new THREE.AmbientLight(0x110022);
+  scene.add(ambientLight);
+  const pointLight = new THREE.PointLight(0xff3366, 0.6);
+  pointLight.position.set(2, 3, 4);
+  scene.add(pointLight);
   
-  camera.position.z = 22;
-  camera.position.y = 1.8;
+  camera.position.z = 25;
+  camera.position.y = 2;
   
-  let clock = 0;
-  function animateScene() {
-    requestAnimationFrame(animateScene);
-    clock += 0.008;
-    stars.rotation.y = clock * 0.08;
-    stars.rotation.x = Math.sin(clock * 0.2) * 0.1;
-    knot.rotation.x = clock * 0.6;
-    knot.rotation.y = clock * 0.4;
-    knot.scale.setScalar(1 + Math.sin(clock * 2.5) * 0.04);
+  let time = 0;
+  function animate3D() {
+    requestAnimationFrame(animate3D);
+    time += 0.005;
+    particlesMesh.rotation.y = time * 0.1;
+    particlesMesh.rotation.x = Math.sin(time * 0.2) * 0.2;
+    ring.rotation.x = Math.sin(time * 0.5) * 0.5;
+    ring.rotation.z = time * 0.3;
+    ring.scale.setScalar(1 + Math.sin(time * 2) * 0.05);
     renderer.render(scene, camera);
   }
-  animateScene();
+  animate3D();
   
   window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
-  
-  // Navigation
-  document.querySelectorAll('.pill-nav').forEach(el => {
-    el.addEventListener('click', () => {
-      const targetId = el.getAttribute('data-section');
-      const targetElem = document.getElementById(targetId);
-      if (targetElem) targetElem.scrollIntoView({ behavior: 'smooth' });
+
+  // Smooth navigation
+  document.querySelectorAll('.nav-pill').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const sectionId = link.getAttribute('data-section');
+      const section = document.getElementById(sectionId);
+      if(section) section.scrollIntoView({ behavior: 'smooth' });
     });
   });
-  
-  // DEMO VOICES - clean and simple, just "Demo Voice"
-  const DEMO_FILES = [
-    { file: "demo.mp3" },
-    { file: "demo2.mp3" },
-    { file: "demo3.mp3" },
-    { file: "demo4.mp3" },
-    { file: "demo5.mp3" }
+
+  // ========== PROFESSIONAL AUDIO PLAYER WITH SINGLE PLAYBACK ==========
+  const demos = [
+    { name: "Demo Voice 1", file: "demo.mp3", icon: "🎭", desc: "Emotional & cinematic" },
+    { name: "Demo Voice 2", file: "demo2.mp3", icon: "🐉", desc: "Anime character energy" },
+    { name: "Demo Voice 3", file: "demo3.mp3", icon: "😂", desc: "Comedy & timing" },
+    { name: "Demo Voice 4", file: "demo4.mp3", icon: "🎬", desc: "Trailer epic" },
+    { name: "Demo Voice 5", file: "demo5.mp3", icon: "🎮", desc: "Game character" }
   ];
-  
-  const container = document.getElementById('dynamic-demo-container');
-  if (container) {
-    container.innerHTML = '';
-    DEMO_FILES.forEach((demo, index) => {
-      const demoCard = document.createElement('div');
-      demoCard.className = 'crystal-card demo-unit';
-      demoCard.innerHTML = `
-        <h3 style="display: flex; gap: 12px; justify-content: center;"><i class="fas fa-waveform" style="color:#ff78b5;"></i> Demo Voice ${index + 1}</h3>
-        <div class="vapor-audio">
-          <audio controls preload="metadata" src="${demo.file}">
-            <source src="${demo.file}" type="audio/mpeg">
-          </audio>
-        </div>
-        <div class="wave-reaction">
-          <i class="fas fa-headphones"></i> <span>click play</span>
-        </div>
-      `;
-      container.appendChild(demoCard);
-    });
+
+  let currentAudio = null;
+  let currentPlayBtn = null;
+
+  function formatTime(seconds) {
+    if (isNaN(seconds)) return "0:00";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
   }
+
+  function createAudioPlayer(demo, index) {
+    const audio = new Audio(demo.file);
+    audio.preload = "metadata";
+    
+    const container = document.createElement('div');
+    container.className = 'glass-card demo-card';
+    
+    container.innerHTML = `
+      <div class="demo-icon">${demo.icon}</div>
+      <div class="demo-title">${demo.name}</div>
+      <div class="demo-desc">${demo.desc}</div>
+      <div class="custom-audio-player">
+        <button class="play-btn" data-index="${index}">
+          <i class="fas fa-play"></i>
+        </button>
+        <div class="audio-progress">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="time-display">0:00 / 0:00</div>
+      </div>
+      <div class="audio-status">Ready</div>
+    `;
+    
+    const playBtn = container.querySelector('.play-btn');
+    const progressFill = container.querySelector('.progress-fill');
+    const progressBar = container.querySelector('.audio-progress');
+    const timeDisplay = container.querySelector('.time-display');
+    const statusSpan = container.querySelector('.audio-status');
+    
+    // Update time display when metadata loads
+    audio.addEventListener('loadedmetadata', () => {
+      timeDisplay.textContent = `0:00 / ${formatTime(audio.duration)}`;
+    });
+    
+    // Update progress
+    audio.addEventListener('timeupdate', () => {
+      if (audio.duration) {
+        const percent = (audio.currentTime / audio.duration) * 100;
+        progressFill.style.width = `${percent}%`;
+        timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+      }
+    });
+    
+    // When audio ends
+    audio.addEventListener('ended', () => {
+      playBtn.innerHTML = '<i class="fas fa-play"></i>';
+      playBtn.classList.remove('playing');
+      statusSpan.textContent = 'Finished';
+      statusSpan.style.color = '#ff88bb';
+      if (currentAudio === audio) currentAudio = null;
+    });
+    
+    // Play/Pause logic with single playback
+    playBtn.addEventListener('click', () => {
+      if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        if (currentPlayBtn) {
+          currentPlayBtn.innerHTML = '<i class="fas fa-play"></i>';
+          currentPlayBtn.classList.remove('playing');
+        }
+      }
+      
+      if (audio.paused) {
+        audio.play();
+        playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        playBtn.classList.add('playing');
+        statusSpan.textContent = 'Playing...';
+        statusSpan.style.color = '#00ffaa';
+        currentAudio = audio;
+        currentPlayBtn = playBtn;
+      } else {
+        audio.pause();
+        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        playBtn.classList.remove('playing');
+        statusSpan.textContent = 'Paused';
+        statusSpan.style.color = '#ffaa66';
+      }
+    });
+    
+    // Seek on progress bar click
+    progressBar.addEventListener('click', (e) => {
+      if (audio.duration) {
+        const rect = progressBar.getBoundingClientRect();
+        const percent = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = percent * audio.duration;
+      }
+    });
+    
+    return container;
+  }
+  
+  const demoContainer = document.getElementById('demo-container');
+  demos.forEach((demo, idx) => {
+    demoContainer.appendChild(createAudioPlayer(demo, idx));
+  });
 </script>
 </body>
 </html>
